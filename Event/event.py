@@ -39,12 +39,3 @@ class event:
             self.__data = EventInfo(data)
     def close_event(self):
         self.isfinished = True
-cycling = event(action = "cycling", going_to = "local shop", reason = "To buy food", info = {"name" : "mohamed", "age" : 17})
-seq = EventSeq(
-    cycling, 
-    event(action = "fell down", location = "the playground"), 
-    event(action = "went black", location = "hospital"), 
-    event(action = "died while struggling with my pain", location = "hospital"), 
-    event(action = "people around my grave were grieving", location = "local cemetry")
-)
-print(seq["skip [1] if [2].action == fell  down"])
