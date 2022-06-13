@@ -5,12 +5,12 @@ AUTHOR'S MESSAGE = Sorry for leaving out the ambiguities
 
  *-*-*
 Words that are commonly misunderstood:
-etc = et cetera (which means "so on" or "and more")
-u = You
-ur = Your
-i.e = for example
-*not a word but*
-local system = a group that is more important than any other groups (not just a group but it's a specific group of beings that are capable of causing an event)
+etc = et cetera (which means "so on" or "and more"), 
+u = You, 
+ur = Your,
+i.e = for example,
+*not a word but*,
+local system = a group that is more important than any other groups (not just a group but it's a specific group of beings that are capable of causing an event),
 *-*-*
 
 What is an event?
