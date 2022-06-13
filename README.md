@@ -109,7 +109,7 @@ and there's also a way to manipulate the event list
 
 let's take the previous example
 ```py
-print(seq["skip [1] if [2].action == fell down"]) # it will skip the first element
+print(seq["skip [1] if [2].action == fell down"]) # it will skip the first element if the conditional expression is true
 ```
 
 keyword: delete, skip ("halt" will be coming soon :) )
