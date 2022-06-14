@@ -1,9 +1,9 @@
 from error import EventClosed, EventImmutable
 from constants import EVENTCLOSED, EVENTIMMUTABLE
 from utils import EventSeq
-from typing import NewType
+from typing import Sequence
 # warning: Events aren't completely immutable
-class EventInfo(object):
+class EventInfo(object, Sequence):
     def __init__(self, data):
         self.data = data
         for keys, values in data.items():
