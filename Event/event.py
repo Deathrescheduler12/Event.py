@@ -1,9 +1,9 @@
 from error import EventClosed, EventImmutable
 from constants import EVENTCLOSED, EVENTIMMUTABLE
 from utils import EventSeq
-from typing import Sequence
+from typing import NewType
 # warning: Events aren't completely immutable
-class EventInfo(object, Sequence):
+class EventInfo(object):
     def __init__(self, data):
         self.data = data
         for keys, values in data.items():
@@ -16,7 +16,7 @@ class EventInfo(object, Sequence):
                     exec(f"self.{keys} = {values}")
     def read(self):
         return "EventInfo(" + str(self.data) + ")"
-class event:
+class event(NewType):
     __slots__ = ["__data", "isfinished"]
     def __init__(self, **__data):
         self.__data = EventInfo(__data)
